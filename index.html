@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <center>
+
+        <div class="container">
+            <h1>Currency Converter </h1>
+            <div class="main">
+                <input type="number" placeholder="Enter Amount" id="input-amount" required>&nbsp &nbsp &nbsp
+                <select id="select-currency" onchange=choosecurrency()>
+                    <option value="">base Currency</option>
+                    <option value="USD">United States Dollar</option>
+                    <option value="EUR">Euro </option>
+                    <option value="GBP">British Pound Sterling</option>
+                    <option value="JPY">Japanese Yen</option>
+                    <option value="CAD">Canadian Dollar</option>
+                    <option value="AUD">Australian Dollar</option>
+                    <option value="CHF">Swiss Franc</option>
+                    <option value="CNY">Chinese Yuan</option>
+                    <option value="SEK">Swedish Krona</option>
+                    <option value="NZD">New Zealand Dollar</option>
+                    <option value="ZAR">South African Rand</option>
+                    <option value="BRL">Brazilian Real</option>
+                    <option value="INR">Indian Rupee</option>
+                    <option value="MXN">Mexican Peso </option>
+                    <option value="RUB">Russian Ruble</option>
+                </select>&nbsp to &nbsp
+                <select id="currency-select" onchange=changedcurrency>
+                    <option value="">base Currency</option>
+                    <option value="USD">United States Dollar</option>
+                    <option value="EUR">Euro </option>
+                    <option value="GBP">British Pound Sterling</option>
+                    <option value="JPY">Japanese Yen</option>
+                    <option value="CAD">Canadian Dollar</option>
+                    <option value="AUD">Australian Dollar</option>
+                    <option value="CHF">Swiss Franc</option>
+                    <option value="CNY">Chinese Yuan</option>
+                    <option value="SEK">Swedish Krona</option>
+                    <option value="NZD">New Zealand Dollar</option>
+                    <option value="ZAR">South African Rand</option>
+                    <option value="BRL">Brazilian Real</option>
+                    <option value="INR">Indian Rupee</option>
+                    <option value="MXN">Mexican Peso </option>
+                    <option value="RUB">Russian Ruble</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <button type="button=" id="btn-convert" onclick=convert(),time()>Convert</button>
+                <br>
+                <br>
+                <br>
+                <input type="number" placeholder="show converted amount" id="output-amount"><br><br><br><br>
+                <div id="time"></div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </center>
+
+</body>
+<script src="index.js"></script>
+
+</html>

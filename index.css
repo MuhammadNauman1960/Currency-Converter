@@ -1,0 +1,20 @@
+
+body
+{
+	background-color: orange;
+}
+h1{
+	color: aqua;
+}
+input[type="number"]:focus
+{
+background-color: red;
+color: white;
+}
+#btn-convert
+{
+    background-color:blue ;
+    color: white;
+   
+}
+
